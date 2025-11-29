@@ -41,7 +41,6 @@ void msg_err(const char *str, ...)
   va_list args;
   va_start(args, str);
   MSG_PACC_STDOUT_ERR();
-  fputs("pacc err: ", stdout);
   vprintf(str, args);
   fputs("\n", stdout);
   va_end(args);
