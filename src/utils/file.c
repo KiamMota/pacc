@@ -1,10 +1,11 @@
 #include <stdio.h>
+
 #ifdef _WIN32
-#include <io.h>
-#define rm _unlink
+  #include <io.h>
+  #define rm _unlink
 #else
-#include <unistd.h>
-#define rm unlink
+  #include <unistd.h>
+  #define rm unlink
 #endif
 
 int file_exists(const char *n) {

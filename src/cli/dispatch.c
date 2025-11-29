@@ -18,7 +18,7 @@ void cli_dispatch(int argn, char **argv)
       return;
     }
   }
-  msg_err("no command named '%s' found.");
+  msg_err("'%s' is not a valid command.");
 }
 
 
