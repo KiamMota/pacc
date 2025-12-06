@@ -91,7 +91,6 @@ int proj_init(int argn, char** argv)
     if(!msg_choose("The directory already exists. Do you want to overwrite it?"))
     goto done;
   }
-
   dir_create(argv[2]);
   /* creating src */
 
@@ -103,7 +102,5 @@ int proj_init(int argn, char** argv)
   if(!msg_choose("Do you want to pre-configure your CMakeLists.txt?")) goto done;
 
 done:
-  msg("done!");
-
   return 0;
 }

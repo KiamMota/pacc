@@ -26,6 +26,14 @@
 
 #define MSG_PACC_STDOUT_DEBUG() fputs("[PACC DEBUG]: ", stdout);
 
+/*
+ * Prints a message formatted as a log to stdout.
+ *
+ * @param str format string 
+ * @param ... other args
+ *
+ * */
+
 void msg(const char *str, ...)
 {
   va_list args;
